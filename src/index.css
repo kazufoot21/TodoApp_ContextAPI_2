@@ -31,6 +31,10 @@ h1 {
   font-weight: 900;
   color: #666;
 }
+h2 {
+  text-align: center;
+  color: orange;
+}
 
 form {
   width: 100%;
@@ -110,6 +114,10 @@ ul li button:disabled {
 
 label {
   cursor: pointer;
+}
+
+#count {
+  font-weight: bold;
 }
 
 @media (max-width: 400px) {
