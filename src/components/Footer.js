@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { DataContext } from './DataProvider';
 
 export const Footer = () => {
+  const [todos, setTodos] = useContext(DataContext);
   return (
     <div className="row">
       <label htmlFor="all" name="all" id="all">

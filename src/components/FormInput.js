@@ -8,7 +8,7 @@ export const FormInput = () => {
 
   const addTodo = (e) => {
     e.preventDefault();
-    setTodos([...todos, { name: todoName, completed: false }]);
+    setTodos([...todos, { name: todoName, complete: false }]);
     setTodoName('');
   };
 
@@ -19,6 +19,7 @@ export const FormInput = () => {
           type="text"
           name="todos"
           id="todos"
+          required
           placeholder="Add Your To Do List"
           value={todoName}
           onChange={(e) => {
